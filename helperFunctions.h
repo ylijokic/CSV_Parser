@@ -129,7 +129,7 @@ void getLargestFile(char *entryName)
     {
         if (strncmp(PREFIX, directory->d_name, strlen(PREFIX)) == 0)
         {
-            if (strcmp(directory->d_name, "movies_by_year") != 0)
+            if (strcmp(directory->d_name, "movies") != 0)
             {
                 // Use stat struct to compare file sizes
                 stat(directory->d_name, &directoryStat);
